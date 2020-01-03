@@ -42,10 +42,6 @@ $ npm i -g new-component
 
 `cd` into your project's directory, and try creating a new component:
 
-<p align="center">
-  <img src="https://github.com/joshwcomeau/new-component/blob/master/docs/demo.gif?raw=true" width="888" height="369" alt="demo of CLI functionality">
-</p>
-
 Your project will now have a new directory at `src/components/Button`. This directory has two files:
 
 ```jsx
