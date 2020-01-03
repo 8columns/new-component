@@ -1,0 +1,29 @@
+{
+  "author": {
+    "name": "Joshua Comeau"
+  },
+  "bin": {
+    "new-component": "./src/index.js"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chalk": "2.0.1",
+    "commander": "2.11.0",
+    "prettier": "1.5.3"
+  },
+  "deprecated": false,
+  "description": "CLI for creating React Components (Based on original code developed Joshua Cameau)",
+  "keywords": [
+    "react",
+    "reactjs",
+    "cli",
+    "component"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "new-component",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.1"
+}
