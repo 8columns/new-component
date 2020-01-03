@@ -29,7 +29,7 @@ This project is based on code developed by a Joshua Comeau. It's very simple to 
 Install via my GitHub repository:
 
 ```bash
-$ npm i -g git+[URL]
+$ npm i -g git+https://github.com/8columns/new-component.git
 ```
 
 `cd` into your project's directory, and try creating a new component:
