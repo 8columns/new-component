@@ -50,7 +50,8 @@ module.exports.getConfig = () => {
 
   const defaults = {
     type: 'class',
-    dir: 'src/components',
+    xdir: 'src/components',
+    dir: '.',
     extension: 'js'
   };
 
@@ -83,7 +84,7 @@ module.exports.logIntro = ({ name, dir, type }) => {
 
 module.exports.logItemCompletion = (successText) => {
   const checkmark = chalk.rgb(...colors.green)('✓');
-  console.info(`${checkmark} ${successText}`);
+  console.info(`${successText}`);
 }
 
 module.exports.logConclusion = () => {

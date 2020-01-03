@@ -56,6 +56,7 @@ const [componentName] = program.args;
 const templatePath = `./templates/${program.type}.js`;
 
 // Get all of our file paths worked out, for the user's project.
+
 const componentDir = `${program.dir}/${componentName}`;
 const filePath = `${componentDir}/${componentName}.${program.extension}`;
 const indexPath = `${componentDir}/index.js`;
@@ -65,9 +66,6 @@ const cssPath = `${componentDir}/${componentName}.css`;
 const indexTemplate = `\
 export {default} from './${componentName}';
 `;
-
-logIntro({ name: componentName, dir: componentDir, type: program.type });
-
 
 // Check to see if a directory at the given path exists
 const fullPathToParentDir = path.resolve(program.dir);
@@ -88,10 +86,6 @@ mkDirPromise(componentDir)
   .then(() => (
     readFilePromiseRelative(templatePath)
   ))
-  .then(template => {
-    logItemCompletion('Directory created.');
-    return template;
-  })
   .then(template => (
     // Replace our placeholders with real data (so far, just the component name)
     template.replace(/COMPONENT_NAME/g, componentName)
@@ -100,28 +94,17 @@ mkDirPromise(componentDir)
     // Format it using prettier, to ensure style consistency, and write to file.
     writeFilePromise(filePath, template)
   ))
-  .then(template => {
-    logItemCompletion('Component built and saved to disk.');
-    return template;
-  })
   .then(template => (
     // We also need the `index.js` file, which allows easy importing.
     writeFilePromise(indexPath, indexTemplate)
   ))
-  .then(template => {
-    logItemCompletion('Index file built and saved to disk.');
-    return template;
-  })
   .then(template => (
     // We also need the `index.js` file, which allows easy importing.
     writeFilePromise(cssPath, '')
   ))
   .then(template => {
-    logItemCompletion('CSS file built and saved to disk.');
+    logItemCompletion('component created!');
     return template;
-  })
-  .then(template => {
-    logConclusion();
   })
   .catch(err => {
     console.error(err);
