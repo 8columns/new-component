@@ -66,4 +66,3 @@ export default Button;
 
 > `index.js` will allows you to `import` from the directory (eg. `import Button from 'components/Button'`), otherwise you should import like this `import Button from 'components/Button/Button'` (wiered!)
 >
-> This structure is not currently configurable, but I'm happy to consider implementing alternatives!
