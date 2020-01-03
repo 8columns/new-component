@@ -64,6 +64,6 @@ class Button extends Component {
 export default Button;
 ```
 
-> This structure might appear odd to you, with an `index.js` that points to a named file. I've found this to be an optimal way to set up components; the `index.js` allows you to `import` from the directory (eg. `import Button from 'components/Button'`), while having `Button.js` means that you're never lost in a sea of `index.js` files in your editor.
+> `index.js` will allows you to `import` from the directory (eg. `import Button from 'components/Button'`), otherwise you should import like this `import Button from 'components/Button/Button'` (wiered!)
 >
 > This structure is not currently configurable, but I'm happy to consider implementing alternatives!
