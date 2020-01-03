@@ -7,6 +7,7 @@
 
 I did modify Joshua Comeau's version to match with my coding style. The purpose of modification is for my personal development on local machine. What i did modified from Joshua's version are
 
+- change logic to create component under current directory instead of under src/components. This will be more flexible in case you want to create child component under any component's folder.
 - add default component stylesheet 
 - modify default Component coding template (add Constructor & default stylesheet)
 
@@ -37,8 +38,6 @@ Option 2 : Install original version developed by Joshua Comeau
 ```bash
 $ npm i -g new-component
 ```
-
-**Note** before using CLI, please make sure that your have created 'src/components' folder. 
 
 
 `cd` into your project's directory, and try creating a new component:
