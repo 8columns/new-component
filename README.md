@@ -38,6 +38,9 @@ Option 2 : Install original version developed by Joshua Comeau
 $ npm i -g new-component
 ```
 
+**Note** before using CLI, please make sure that your have created 'src/components' folder. 
+
+
 `cd` into your project's directory, and try creating a new component:
 
 <p align="center">
