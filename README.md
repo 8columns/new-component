@@ -8,8 +8,9 @@
 I did modify Joshua Comeau's version to match with my coding style. The purpose of modification is for my personal development on local machine. What i did modified from Joshua's version are
 
 - change logic to create component under current directory instead of under src/components. This will be more flexible in case you want to create child component under any component's folder.
-- add default component stylesheet 
-- modify default Component coding template (add Constructor & default stylesheet)
+- create an empty stylesheet file + add link into a component. 
+- modify default Component coding template (add default Constructor & change default coding style)
+- reduce amount of logs display on screen.
 
 <br />
 
