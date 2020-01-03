@@ -69,5 +69,5 @@ class Button extends Component {
 export default Button;
 ```
 
-> `index.js` will allows you to `import` from the directory (eg. `import Button from 'components/Button'`), otherwise you should import like this `import Button from 'components/Button/Button'` (wiered!)
+> `index.js` will allows you to `import` from the directory (eg. `import Button from 'components/Button'`), otherwise you have to import like this `import Button from 'components/Button/Button'` (a little wiered!)
 >
