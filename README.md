@@ -11,11 +11,10 @@
 
 **Note :** Based on original code developed by Joshua Comeau at https://github.com/joshwcomeau/new-component 
 
-What i did modified from Joshua's version are
+I did modify Joshua Comeau's version to match with my coding style. The purpose of modification is for using in my local development. What i did modified from Joshua's version are
 
 - add default component stylesheet 
-- add default constructor in class
-- modify default Component coding style
+- modify default Component coding template (add Constructor & default stylesheet)
 
 <br />
 
