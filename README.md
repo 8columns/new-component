@@ -40,7 +40,13 @@ $ npm i -g new-component
 ```
 
 
-`cd` into your project's directory, and try creating a new component:
+`cd` into your project's directory, then cd into src folder, and try creating a new component:
+
+```bash
+$ cd your-project
+$ cd src
+$ new-component
+```
 
 Your project will now have a new directory at `src/components/Button`. This directory has two files:
 
