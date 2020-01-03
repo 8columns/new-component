@@ -26,10 +26,16 @@ This project is based on code developed by a Joshua Comeau. It's very simple to 
 
 ## Quickstart
 
-Install via my GitHub repository:
+Option 1: Install my modified version (via GitHub repository):
 
 ```bash
 $ npm i -g git+https://github.com/8columns/new-component.git
+```
+
+Option 2 : Install original version developed by Joshua Comeau
+
+```bash
+$ npm i -g new-component
 ```
 
 `cd` into your project's directory, and try creating a new component:
