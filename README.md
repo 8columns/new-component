@@ -45,7 +45,7 @@ $ npm i -g new-component
 ```bash
 $ cd your-project
 $ cd src
-$ new-component
+$ new-component Button
 ```
 
 Your project will now have a new directory at `src/components/Button`. This directory has two files:
