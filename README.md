@@ -7,7 +7,6 @@
 
 I did modify Joshua Comeau's version (1.0.1) to match with my coding style. The purpose of modification is for my personal development on local machine. What i did modified from Joshua's version are
 
-- change default file extension from js to jsx
 - change logic to create component under **current directory** instead of under **src/components**. This will be more flexible in case you want to create child component under any component's folder.
 - create an empty stylesheet file + add link into a component. 
 - modify default Component coding template (add default Constructor & change default coding style)
@@ -53,12 +52,12 @@ $ new-component Button
 Your project will now have a new directory at `src/components/Button`. This directory has two files:
 
 ```jsx
-// `Button/index.jsx`
+// `Button/index.js`
 export { default } from './Button';
 ```
 
 ```jsx
-// `Button/Button.jsx`
+// `Button/Button.js`
 import React, { Component } from 'react';
 
 class Button extends Component {

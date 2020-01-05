@@ -46,20 +46,20 @@ program
     config.dir
   ).option(
     '-x, --extension <fileExtension>',
-    'Which file extension to use for the component (default: "jsx")',
+    'Which file extension to use for the component (default: "js")',
     config.extension
   ).parse(process.argv);
 
 const [componentName] = program.args;
 
 // Find the path to the selected template file.
-const templatePath = `./templates/${program.type}.jsx`;
+const templatePath = `./templates/${program.type}.js`;
 
 // Get all of our file paths worked out, for the user's project.
 
 const componentDir = `${program.dir}/${componentName}`;
 const filePath = `${componentDir}/${componentName}.${program.extension}`;
-const indexPath = `${componentDir}/index.jsx`;
+const indexPath = `${componentDir}/index.js`;
 const cssPath = `${componentDir}/${componentName}.css`;
 
 // Our index template is super straightforward, so we'll just inline it for now.

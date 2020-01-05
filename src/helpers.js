@@ -52,7 +52,7 @@ module.exports.getConfig = () => {
     type: 'class',
     xdir: 'src/components',
     dir: '.',
-    extension: 'jsx'
+    extension: 'js'
   };
 
   const globalOverrides = requireOptional(`/${home}/.new-component-config.json`);
